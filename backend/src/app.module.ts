@@ -3,6 +3,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { MARIADB_PROVIDER } from './providers/mariadb.provider';
 
 @Module({
   imports: [
@@ -11,6 +12,6 @@ import { AppService } from './app.service';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [MARIADB_PROVIDER, AppService],
 })
 export class AppModule {}
