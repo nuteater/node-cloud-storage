@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d0d77efd-b6b6-46de-9198-b99c4f0fce56" name="Changes" comment="Add bootstrap style.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.node-cloud-storage.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.node-cloud-storage.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21OFlUN2v3YOaWuiDsMp8AZooQZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -33,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$USER_HOME$/AppData/Roaming/npm/node_modules/gulp" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\CloudStorage\node-cloud-storage\frontend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\node-cloud-storage\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -56,6 +58,7 @@
       <updated>1637804384743</updated>
       <workItem from="1637804388656" duration="4161000" />
       <workItem from="1639655413278" duration="684000" />
+      <workItem from="1639982344285" duration="2003000" />
     </task>
     <task id="LOCAL-00001" summary="Add bootstrap style.">
       <created>1637812001262</created>
@@ -88,5 +91,16 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add bootstrap style." />
     <option name="LAST_COMMIT_MESSAGE" value="Add bootstrap style." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/root.module.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
