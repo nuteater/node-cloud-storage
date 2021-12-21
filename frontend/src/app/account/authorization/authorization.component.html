@@ -1,0 +1,27 @@
+<div class="authorizationBloc">
+  <div>
+
+    <input
+      #NickInput
+      (input)="getNickname(NickInput.value)"
+      type="text" placeholder="Nickname/Email" style="margin: 5px"
+    >
+  </div>
+  <div>
+    <input
+      #PasswordInput
+      (input)="getPassword(PasswordInput.value)"
+      type="Password" placeholder="Password" style="margin: 5px"
+
+    >
+  </div>
+
+  <div>
+    <button class="btn btn-success" style="margin: 5px">
+      Login
+    </button>
+    <button class="btn btn-primary" style="margin: 5px">
+      Registration
+    </button>
+  </div>
+</div>

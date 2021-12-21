@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {AccountComponent} from "../account/account.component";
-import {AccountModule} from "../account/account.module";
+
 import { NgxSpinnerModule }  from 'ngx-spinner';
+import {AccountComponent} from "./account/account.component";
+import {FormsModule} from "@angular/forms";
+import {AccountModule} from "./account/account.module";
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { NgxSpinnerModule }  from 'ngx-spinner';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxSpinnerModule,
+    FormsModule,
     AccountModule,
-    NgxSpinnerModule
   ],
   providers: [],
   exports: [
+    AccountModule
   ],
   bootstrap: [AppComponent]
 })
