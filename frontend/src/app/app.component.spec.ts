@@ -1,35 +1,31 @@
-import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { ItemsComponent } from './items/items.component';
+
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { APP_BASE_HREF } from '@angular/common';
+
+import { routingModule } from './app.routing';
+
+import { TestAllDeclarations, TestCommonImports } from '../app/_shared/helpers/test.helper';
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        ...TestAllDeclarations,
       ],
+      imports: [
+        ...TestCommonImports,
+        routingModule,
+      ],
+      providers: [
+        {provide: APP_BASE_HREF, useValue: '/'}
+      ]
     }).compileComponents();
-  });
-
-  it('should create the app', () => {
+  }));
+  it('should create the app', waitForAsync(() => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+    const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'frontend'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('frontend');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('frontend app is running!');
-  });
+  }));
 });

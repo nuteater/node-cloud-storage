@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from "@angular/forms";
-import {ValidationMessageComponent} from "./validation-message.component";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
-    ValidationMessageComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule
   ]
 })
-export class AuthorizationModule { }
+export class AuthorizationModule {}
