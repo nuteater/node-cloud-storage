@@ -44,7 +44,7 @@ export class ItemAddEditComponent implements OnInit {
   }
 
   getButtonText(): string {
-    return this.item ? 'Update' : 'Add';
+    return this.item ? 'Update folder' : 'Add folder';
   }
 
   private doAddItem() {

@@ -28,5 +28,8 @@ export class ItemsListItemComponent implements OnInit {
   delete() {
     this.itemsService.delete(this.item.id).subscribe();
   }
+  open(){
+
+  }
 
 }

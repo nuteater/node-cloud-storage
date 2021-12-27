@@ -3,12 +3,15 @@
   <hr>
   {{ item.description }}
 
-  <div class="row" style="padding-top:10;">
-    <div class="col-md-6">
-      <button class='btn btn-primary btn-block' type='button' (click)="edit()">edit item</button>
+  <div class="row" style="padding-top:5px; max-width: 550px">
+    <div class="col-md-4">
+      <button class='btn btn-primary btn-block' type='button' style="max-width: 150px" (click)="edit()">Edit folder name</button>
     </div>
-    <div class="col-md-6">
-      <button class='btn btn-danger btn-block' type='button' (click)="delete()">delete item</button>
+    <div class="col-md-4">
+      <button class='btn btn-danger btn-block' type='button' style="max-width: 150px" (click)="delete()">Delete folder</button>
+    </div>
+    <div class="col-md-4">
+      <button class='btn btn-success btn-block' type='button' style="max-width: 150px" (click)="open()">Open folder</button>
     </div>
   </div>
 </li>

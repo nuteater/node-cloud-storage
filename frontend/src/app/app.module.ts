@@ -21,6 +21,8 @@ import { ItemsModule } from './items/items.module';
 import { ItemsService } from './items/_services/items.service';
 import { AuthService } from './_auth/services/auth.service';
 
+import {DropdownModule } from 'primeng/dropdown';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +38,8 @@ import { AuthService } from './_auth/services/auth.service';
     routingModule,
     ReactiveFormsModule,
     FormsModule,
-    ItemsModule
+    ItemsModule,
+    DropdownModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/'},
